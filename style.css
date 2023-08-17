@@ -1,0 +1,445 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+.full_screen {
+  background-image: url(./img/фон\ 1.png);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.full_screen__sky {
+  position: absolute;
+  left: 0;
+  bottom: 60px;
+  width: 100%;
+}
+.full_screen__tree-left {
+  position: absolute;
+  width: 16%;
+  bottom: 160px;
+}
+.full_screen__ambar {
+  position: absolute;
+  bottom: 130px;
+  left: 230px;
+  width: 20%;
+}
+.full_screen__small-hourse {
+  position: absolute;
+  width: 10%;
+  bottom: 140px;
+  left: 540px;
+}
+.full_screen__bush-left {
+  position: absolute;
+  bottom: 60px;
+  width: 10%;
+  animation: bush-left 1s linear infinite alternate;
+}
+@keyframes bush-left {
+  0% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.full_screen__bush-right {
+  position: absolute;
+  right: 0px;
+  width: 9%;
+  bottom: 50px;
+  animation: bush-right 1s linear infinite alternate;
+}
+@keyframes bush-right {
+  0% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.full_screen__bird {
+  position: absolute;
+  right: 7%;
+  bottom: 70%;
+}
+
+.header {
+  max-width: 1170px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.header__logo {
+  width: 152px;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 427px;
+  margin-left: 300px;
+}
+.header__nav a {
+  color: #000;
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.header__phone {
+  color: #000;
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.header__txt {
+  margin-top: 8px;
+  color: #9b9595;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.block-info {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 70px;
+}
+.block-info__left {
+  padding: 20px;
+}
+.block-info__left__titel {
+  color: #000;
+  font-family: "Philosopher", sans-serif;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 107%; /* 60.99px */
+  padding: 20px;
+}
+.block-info__left__text {
+  color: #646464;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 33.6px */
+  padding: 20px;
+}
+.block-info__left__button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #fde024 0%, #a08c0d 100%);
+  color: #6A5300;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 213.333% */
+  letter-spacing: 1.05px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.block-info__left__button::after {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.3098039216);
+  border-radius: 50%;
+  left: 0;
+  top: -130px;
+}
+.block-info__right {
+  max-width: 540px;
+}
+
+.section-about {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.section-about__titel {
+  text-align: center;
+  color: #363434;
+  /* h2 mob */
+  font-family: Philosopher;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 120% */
+}
+.section-about__block {
+  display: flex;
+  margin-top: 50px;
+}
+.section-about__box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-about__inside {
+  width: 248px;
+  margin: 0 auto;
+}
+.section-about__inside-number {
+  color: #008139;
+  font-family: Philosopher;
+  font-size: 32px;
+  font-weight: 700;
+}
+.section-about__inside-txt {
+  color: #0B0B0B;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 166.667% */
+}
+.section-about__text {
+  margin-top: 30px;
+  color: #7E7E7E;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400s;
+  line-height: 20px; /* 153.846% */
+}
+
+.section2 {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+.section2__block {
+  width: 200px;
+}
+.section2__block-img {
+  display: flex;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+.section2__block-titel {
+  color: #0B0B0B;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 166.667% */
+  padding: 10px 0;
+}
+.section2__block-txt {
+  color: #7E7E7E;
+  text-align: center;
+  /* (p) mob */
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 153.846% */
+}
+
+.main__titel2 {
+  color: #363434;
+  text-align: center;
+  /* h2 mob */
+  font-family: Philosopher;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 120% */
+  margin-top: 100px;
+}
+
+.main__titel3 {
+  color: #363434;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.section3__background-1 {
+  background-image: url(./img/Небо\ 1.png);
+  background-size: cover;
+}
+
+.section3__background {
+  background-image: url(./img/gazon.png);
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  height: 1400px;
+}
+.section3__background__boy__with-hourse {
+  position: absolute;
+  width: 21%;
+  bottom: 0;
+  right: 2%;
+}
+.section3__background__sky {
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+}
+.section3__background__girl__with-hourse {
+  position: absolute;
+  bottom: 2%;
+  width: 18%;
+  left: 4%;
+}
+
+.section3 {
+  max-width: 1170px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section3__block {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 14px 30px 0px rgba(0, 0, 0, 0.07);
+  border: 1px solid #EAEAEA;
+  margin: 50px auto;
+  padding: 0px 30px 50px 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.section3__block-line {
+  width: 26px;
+  height: 1px;
+  background: #008139;
+  margin-bottom: 15px;
+}
+.section3__block-titel {
+  margin: 20px auto;
+}
+.section3__block-img {
+  transform: translateY(-30px);
+}
+.section3__button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.section3__button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #fde024 0%, #a08c0d 100%);
+  color: #6A5300;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 213.333% */
+  letter-spacing: 1.05px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.section3__button::after {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.3098039216);
+  border-radius: 50%;
+  left: 0;
+  top: -130px;
+}
+.section3__boy__with-hourse {
+  position: absolute;
+  width: 2%;
+}
+
+@media (max-width: 1199px) {
+  .full_screen {
+    background-image: url(./img/фон\ 1.png);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  .full_screen__sky {
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    width: 100%;
+  }
+  .full_screen__tree-left {
+    position: absolute;
+    width: 16%;
+    bottom: 160px;
+  }
+  .full_screen__ambar {
+    position: absolute;
+    bottom: 130px;
+    left: 230px;
+    width: 20%;
+  }
+  .full_screen__small-hourse {
+    display: none;
+  }
+  .full_screen__bush-left {
+    display: none;
+  }
+  @keyframes bush-left {
+    0% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  .full_screen__bush-right {
+    display: none;
+  }
+  @keyframes bush-right {
+    0% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  .full_screen__bird {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
